@@ -22,12 +22,12 @@ class Fraction(object):
             if(self.top % i == 0 and self.bottom % i == 0):
                 top_smplf = self.top/i
                 bottom_smplf = self.bottom/i  
-                j *= i
+                
                 k += 1
                 print('Factor '+ str(k) +' = '+ str(i))
                 
             i += 1   
-        print('Multiplying factor',j)      
+        print('-----')      
         return Fraction(top_smplf, bottom_smplf)
 
 f = Fraction(x, y) 
